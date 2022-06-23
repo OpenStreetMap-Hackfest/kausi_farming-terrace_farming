@@ -66,7 +66,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }));
 
-export function Navbar() {
+export function Navbar({ isLoggedIn, setIsLoggedIn }) {
   const theme = useTheme();
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
@@ -79,6 +79,10 @@ export function Navbar() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+  function handleLogout() {
+    setIsLoggedIn(false)
+    navigate('/')
+  }
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -105,12 +109,34 @@ export function Navbar() {
               }} />
             </LinkA>
           </Typography>
-          <Button variant="secondary" color="textSecondary" onClick={() => handleNavigation('/signup')} >
-            Signup
-          </Button>
-          <Button variant="secondary" color="textSecondary" onClick={() => handleNavigation('/login')} >
-            Login
-          </Button>
+          {isLoggedIn ? (
+            <>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => handleLogout()}
+                sx={{ ml: 2 }}
+              >
+                Logout
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => handleNavigation("/profile")}
+                sx={{ ml: 2 }}
+              >
+                Profile
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button variant="secondary" color="textSecondary" onClick={() => handleNavigation('/signup')} >
+                Signup
+              </Button>
+              <Button variant="secondary" color="textSecondary" onClick={() => handleNavigation('/login')} >
+                Login
+              </Button></>
+          )}
         </Toolbar>
       </AppBar>
       <Drawer
@@ -137,7 +163,7 @@ export function Navbar() {
         </DrawerHeader>
         <Divider />
         <List sx={{
-         
+
         }}>
           {navItems.map((text, index) => (
             <ListItem button onClick={() => handleNavigation(`${text.path}`)} key={text.id}>

@@ -1,21 +1,29 @@
 import styled from "@emotion/styled";
 import { CropCard } from "./Card";
 import Carousel from "./Carousel";
-import { cropsData } from "./cropsData";
+// import { cropsData } from "./cropsData";
 
-export function Crops() {
-  const Title = size => <h3>Total: {size} cards</h3>;
+export function Crops(props) {
+  const { cropsData } = props;
+  const Title = size => <h3>Total: {size} Crops Suggested</h3>;
 
   return (
     <Wrapper >
       <div className="container">
-        <Carousel cardDist={25} navOnTop navTitle={Title.bind(null, cropsData.length)}>
-          {cropsData.map((crop, index) => (
-            <CropCard key={index} crop={crop} />
-          ))}
+        <Carousel cardDist={25}
+          navOnTop navTitle={Title.bind(null, cropsData.length)}
+        >
+          {
+            cropsData.length > 0 ?
+              (cropsData.map((crop, index) => (
+                <CropCard key={index} crop={crop} />
+              )))
+              :
+              <div>No Crop Suggestions</div>
+          }
         </Carousel>
       </div>
-    </Wrapper>
+    </Wrapper >
   );
 }
 

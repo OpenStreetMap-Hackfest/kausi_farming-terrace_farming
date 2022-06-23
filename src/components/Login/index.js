@@ -32,18 +32,21 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export function SignIn() {
+export function SignIn({ setIsLoggedIn }) {
     const navigate = useNavigate();
-    
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        axios.post('/api/v1/login/', {
+        axios.post('/api/v1/token/', {
             username: data.get('username'),
             password: data.get('password'),
         }
         ).then(function (response) {
             console.log(response);
+            setIsLoggedIn(true);
+            localStorage.setItem('token', response.data.access);
+            localStorage.setItem('refresh', response.data.refresh);
             navigate("/");
         }
         ).catch(function (error) {
