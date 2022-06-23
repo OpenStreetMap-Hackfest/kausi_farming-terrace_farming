@@ -1,0 +1,22 @@
+{
+    "User": [
+      {
+        "BossId": "3",
+        "DateOfBirth": "1966-09-27T00:00:00",
+        "FamilyName": "Montejano",
+        "Gender": "Unspecified",
+        "GivenName": "Trinh",
+        "Id": "8",
+        "Title": "Tech Manager"
+      },
+      {
+        "BossId": null,
+        "DateOfBirth": "1927-01-29T00:00:00",
+        "FamilyName": "Fetzer",
+        "Gender": "Unspecified",
+        "GivenName": "Winfred",
+        "Id": "1",
+        "Title": "CEO"
+      }
+  ]
+  }
