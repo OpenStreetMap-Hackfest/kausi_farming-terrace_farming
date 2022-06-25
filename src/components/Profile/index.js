@@ -1,12 +1,10 @@
 import React from 'react';
 import {
-    Container, Box, Typography, CardHeader, CardContent, Divider, Card, Grid
+    Container, Box, Typography, CardMedia, CardContent, Card, Grid
 } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export function Profile() {
-    const navigate = useNavigate();
     const [cropData, setCropData] = React.useState([]);
     React.useEffect(() => {
         axios.get('/api/v1/getusercrops/', {
@@ -39,25 +37,29 @@ export function Profile() {
                             <Grid item xs={6}>
 
                                 <Card style={{
-                                    marginTop: '10px',
-                                    marginBottom: '10px',
-                                    // width: '460px',
-                                }} key={crop.id}>
-                                    <CardHeader>
-                                        <Typography variant="h5" component="h2" gutterBottom>
+                                    width: "460px",
+                                }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="140"
+                                        style={{
+                                            background: "#ccc",
+                                        }}
+                                        image={crop.crop.image !== null ? crop.crop.image : '/images/kausi.png'}
+                                        alt={crop.crop.label}
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
                                             {crop.crop.local_name}
                                         </Typography>
-                                    </CardHeader>
-                                    <CardContent>
-                                        <Typography variant="h6" component="h2" color="ButtonText" gutterBottom>
-                                            Crop Type: {crop.crop.category}
+                                        <Typography variant="h6" color="textSecondary" component="i">
+                                            Scientific Name: {crop.crop.scientific_name}
                                         </Typography>
-                                        <Typography variant="h6" component="h2" color="textSecondary" gutterBottom>
+                                        <Typography variant="h6" color="textPrimary" component="p">
+                                            {crop.crop.harvest} months to harvest
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary">
                                             {crop.crop.description}
-                                        </Typography>
-                                        <Divider />
-                                        <Typography variant="h6" component="h2" color="primary" gutterBottom>
-                                            Harvest time: {crop.crop.harvest} Months
                                         </Typography>
                                     </CardContent>
                                 </Card>

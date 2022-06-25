@@ -1,43 +1,29 @@
 import React, { useRef, useEffect, useState } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { Box, Typography, Button, Snackbar, Alert, CircularProgress } from '@mui/material';
+import { Box, Typography, Snackbar, Alert, CircularProgress } from '@mui/material';
 import { Crops } from '../CropCarousel';
 import axios from 'axios';
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+import agriShop from './agariShop.json'
 
 export function Main() {
     const mapContainer = useRef(null);
     const map = useRef(null);
     const markerRef = useRef(null);
-    const [msg, setMsg] = useState('');
-    const [sever, setSever] = useState('');
-    const [open, setOpen] = React.useState(false);
     const [temperature, setTemperature] = useState();
     const [lat, _setLat] = useState(null);
     const [loading, setLoading] = useState(true);
     const [lng, _setLng] = useState(null);
     const [cropData, setCropData] = useState([]);
     const [crop, setCrop] = useState([]);
-
+    const storeRef = useRef(null);
     const focussedRef = useRef(lat);
     const focussed1Ref = useRef(lng);
 
 
     const API_KEY = 'b50ba524bcd2f7d3a582e0b42b251afd'
 
-    const handleClick = () => {
-        setOpen(true);
-    };
 
-    const handleClose = (event, reason) => {
-        if (reason === 'clickaway') {
-            return;
-        }
-
-        setOpen(false);
-    };
 
     const setLng = (data) => {
         focussed1Ref.current = data;
@@ -47,6 +33,26 @@ export function Main() {
         focussedRef.current = data;
         _setLat(data);
     };
+    const handleShopClick = (data) => {
+        console.log(data);
+        new maplibregl.Marker({
+            background: '/images/seed.png'
+        })
+            .setLngLat([data[0], data[1]])
+            .addTo(map.current);
+
+        map.current.flyTo({
+            center: [data[0], data[1]],
+            zoom: 15,
+            speed: 1,
+            curve: 1,
+            easing: function (t) {
+                return t;
+            }
+        });
+    }
+
+
     useEffect(() => {
         if (map.current) return; //stops map from intializing more than once
         map.current = new maplibregl.Map({
@@ -128,7 +134,6 @@ export function Main() {
                     );
 
 
-                // get current soil ph from open api
                 new maplibregl.Marker({ color: "#FF0000" })
                     .setLngLat([position.coords.longitude, position.coords.latitude])
                     .addTo(map.current)
@@ -139,7 +144,7 @@ export function Main() {
             // map.current.getCanvas().focus();
             map.current.flyTo({
                 center: e.lngLat,
-                zoom: 15,
+                zoom: 18,
                 essential: true
             });
             markerRef.current?.remove();
@@ -189,39 +194,55 @@ export function Main() {
                             console.log(err);
                         }
                         );
-
                 }
+
                 ).catch(err => {
                     console.log(err);
                 }
                 );
-        })
-
-    }, [cropData]);
-    // setTimeout(() => {
-    //     setLoading(false);
-    // }, 5000);
-    // useEffect(() => {
-    //     if (cropData.length > 0) return;
-    //     console.log("lat,lng,tmp", lat, lng, temperature);
-    //     axios.get('/api/v1/getallcrops/')
-    //         .then(res => {
-    //             setCropData(res.data)
-    //             console.log("cropsData", res)
-    //         }
-    //         )
-    //         .catch(err => {
-    //             console.log(err)
-    //         }
-    //         )
-    // }, [cropData])
+        }
+        );
+        map.current.on('load', () => {
+            map.current.addLayer({
+                id: 'locations',
+                type: 'circle',
+                /* Add a GeoJSON source containing place coordinates and information. */
+                source: {
+                    type: 'geojson',
+                    data: agriShop
+                }
+            });
+        });
+    }, [temperature]);
 
     return (
         <>
             <Box>
+                <div class='sidebar'>
+                    <div class='heading'>
+                        <h1>Nearest Seed Stores</h1>
+                    </div>
+                    <div id='listings' className='listings'>
+                        {
+                            agriShop[0].features.map((store, index) => {
+                                return (
+                                    <div onClick={() => handleShopClick(store.geometry.coordinates)} className="item" key={index}>
+                                        <div className='item'>
+                                            <a href="#" id={`link-${store.properties.id}`}>{store.properties.name}</a>
+                                            <p>{store.properties['addr:place']}</p>
+                                            <p>{store.properties.contact} {store.properties['contact:phone']}</p>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            )
+                        }
+                    </div>
+                </div>
                 <div className="map-wrap">
                     <div ref={mapContainer} className="map" />
                 </div>
+
                 <Box style={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -248,11 +269,7 @@ export function Main() {
                     {loading ? <CircularProgress /> : <Crops cropsData={crop} />}
                 </Box>
 
-                <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                    <Alert onClose={handleClose} severity={sever} sx={{ width: '100%' }}>
-                        {msg}
-                    </Alert>
-                </Snackbar>
+
             </Box>
         </>
     );

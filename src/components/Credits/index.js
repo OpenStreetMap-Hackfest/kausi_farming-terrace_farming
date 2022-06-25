@@ -29,7 +29,10 @@ export function Credits() {
                             />
                             <Typography variant="body1" gutterBottom>
                                 All the codes and resources of this app  are open sources.
-                                The source code is available on Github.
+                                The source code is available on {
+                                    " "
+                                }
+                                <a href="https://github.com/bhusallaxman22/osmhackfest-kausifarming">Github</a>
                             </Typography>
                             {/* List libraries used and their Link */}
                             <Typography variant="body1" gutterBottom>

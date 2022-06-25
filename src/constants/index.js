@@ -1,4 +1,4 @@
-import { Home, Info, Person } from "@mui/icons-material";
+import { Grass, Home, Info, Person, Settings } from "@mui/icons-material";
 
 export const navItems = [
     {
@@ -18,5 +18,16 @@ export const navItems = [
         label: 'Credits and Liscense',
         path: '/credits',
         icon: <Person />,
+    },
+    {
+        id: 'kjddskjsd5sdfsdf',
+        label: 'Household Waste into Crop',
+        path: '/waste-management',
+        icon: <Settings />,
+    }, {
+        id: 'kjddskjcxsd5sdfsdf',
+        label: 'Request Crops',
+        path: '/request-crops',
+        icon: <Grass />,
     }
 ]

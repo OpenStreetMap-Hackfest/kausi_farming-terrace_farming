@@ -29,6 +29,12 @@ function Copyright(props) {
         </Typography>
     );
 }
+function parseJwt(token) {
+    if (!token) { return; }
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace('-', '+').replace('_', '/');
+    return JSON.parse(window.atob(base64));
+}
 
 const theme = createTheme();
 
@@ -47,6 +53,8 @@ export function SignIn({ setIsLoggedIn }) {
             setIsLoggedIn(true);
             localStorage.setItem('token', response.data.access);
             localStorage.setItem('refresh', response.data.refresh);
+            console.log(parseJwt(localStorage.getItem('token')));
+            localStorage.setItem('user_id', parseJwt(localStorage.getItem('token')).user_id);
             navigate("/");
         }
         ).catch(function (error) {

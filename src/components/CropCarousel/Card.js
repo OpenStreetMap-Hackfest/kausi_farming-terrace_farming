@@ -1,11 +1,13 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, CardActions, Typography, Button } from "@mui/material";
+import { Card, CardMedia, CardContent, CardActions, Typography, Button, TextField } from "@mui/material";
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import axios from 'axios';
 export function CropCard({ crop }) {
+  const [description, setDescription] = React.useState('');
   // const theme = useTheme();
   // const match = useMediaQuery(theme.breakpoints.up('sm'));
   const [open, setOpen] = React.useState(false);
@@ -13,9 +15,29 @@ export function CropCard({ crop }) {
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
+  };
+  const handleAddCrop = () => {
+    axios.post('/api/v1/addusercrop/', {
+      crop_id: crop.id,
+      user_id: localStorage.getItem('user_id'),
+      description
+    }, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`
+      }
+    })
+      .then(function (response) {
+        console.log(response);
+        handleClose();
+      }
+      ).catch(function (error) {
+        console.log(error);
+        handleClose();
+      }
+      );
+
   };
 
   return (
@@ -48,7 +70,7 @@ export function CropCard({ crop }) {
         </CardContent>
         <CardActions>
           <Button size="small" onClick={handleClickOpen}>Select This Crop</Button>
-          <Button size="small" href={crop.link} >Learn More</Button>
+          <Button size="small" href={crop.link} target="_blank" >Learn More</Button>
         </CardActions>
       </Card>
       <Dialog
@@ -64,10 +86,21 @@ export function CropCard({ crop }) {
           <DialogContentText id="alert-dialog-description">
             Do you want to add {crop.local_name} to your cultivated crops.
           </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Add a description about how you harvested this crop? (optional)"
+            type="text"
+            fullWidth
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            variant="standard"
+          />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose} autoFocus>
+          <Button onClick={handleAddCrop} autoFocus>
             Yes
           </Button>
         </DialogActions>

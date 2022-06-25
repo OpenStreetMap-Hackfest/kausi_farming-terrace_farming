@@ -1,0 +1,954 @@
+[
+    {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9655544064",
+                    "name": "Arti Nursery",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2800201,
+                        27.6899482
+                    ]
+                },
+                "id": "node/9655544064"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9655544130",
+                    "name": "Paudel Masala Mill and Khadya Bhandar",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.277506,
+                        27.686826
+                    ]
+                },
+                "id": "node/9655544130"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9655557560",
+                    "name": "Falful and Juice Center",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.277311,
+                        27.6864019
+                    ]
+                },
+                "id": "node/9655557560"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9662475234",
+                    "name": "Champa Chameli Nursery",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2807573,
+                        27.6793951
+                    ]
+                },
+                "id": "node/9662475234"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9708710911",
+                    "name": "Rara Karnali Agriculture Nepal",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2801599,
+                        27.6828354
+                    ]
+                },
+                "id": "node/9708710911"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/4836516857",
+                    "name": "Arohi Agrovet",
+                    "opening_hours": "7:00 - 18:30",
+                    "phone": "+977 9824141689",
+                    "shop": "agrarian",
+                    "source": "2cpokhara"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.9964623,
+                        28.187732
+                    ]
+                },
+                "id": "node/4836516857"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/5096897260",
+                    "name": "Arnapurna Krishi Samagri Bikri Kendra",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.9969064,
+                        28.1957281
+                    ]
+                },
+                "id": "node/5096897260"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/5560307355",
+                    "addr:city": "Janakpur",
+                    "addr:country": "NP",
+                    "addr:place": "Suganikash",
+                    "name": "ॐ साई बाबा एग्रोभेट",
+                    "name:en": "Om Sai Baba Agrovet",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        86.0396346,
+                        26.7583009
+                    ]
+                },
+                "id": "node/5560307355"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/5635663146",
+                    "addr:country": "NP",
+                    "addr:district": "Nuwakot",
+                    "addr:place": "Sangam Chowk",
+                    "name": "त्रिवेणी पोल्ट्री सप्लायर्स",
+                    "name:en": "Triveni Poultry Suppliers",
+                    "phone": "+977 9818900900",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.1458736,
+                        27.9006217
+                    ]
+                },
+                "id": "node/5635663146"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/5645230518",
+                    "name": "G.P. Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        84.0040626,
+                        28.2154758
+                    ]
+                },
+                "id": "node/5645230518"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/6055556926",
+                    "name": "Patichaur Biu Bisadi Kendra",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.7367214,
+                        28.2719555
+                    ]
+                },
+                "id": "node/6055556926"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/6065314414",
+                    "addr:city": "Modi Rural Municipality",
+                    "addr:district": "Parbat",
+                    "addr:place": "Patichaur",
+                    "contact:phone": "9847748540",
+                    "name": "Dhaulagiri Krishi Samagri Bikri Kendra",
+                    "owner": "Ganga Timilsina",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.7392663,
+                        28.2720386
+                    ]
+                },
+                "id": "node/6065314414"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/6909174110",
+                    "addr:street": "katharaa",
+                    "name": "Prasad khaad beez bhandar",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.3891537,
+                        25.9144868
+                    ]
+                },
+                "id": "node/6909174110"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/6953102534",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        84.0859014,
+                        28.1899699
+                    ]
+                },
+                "id": "node/6953102534"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/7452902130",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6642631,
+                        26.3020922
+                    ]
+                },
+                "id": "node/7452902130"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9150167386",
+                    "name": "Barn in a farm",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2695827,
+                        26.763512
+                    ]
+                },
+                "id": "node/9150167386"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599522",
+                    "addr:place": "Dapcha",
+                    "contact": "11680258",
+                    "name": "Sewa Vet Agro Concern",
+                    "name:ne": "सेवा भेट यग्रो कन्सर्न",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.60367,
+                        27.55424
+                    ]
+                },
+                "id": "node/9449599522"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599523",
+                    "addr:place": "Dapcha",
+                    "name": "Ram Agrovet Centre",
+                    "name:ne": "राम यग्रोभेट सेन्टर",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.60548,
+                        27.55367
+                    ]
+                },
+                "id": "node/9449599523"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599526",
+                    "addr:place": "Chattrabanjh",
+                    "contact": "9849848517",
+                    "name": "Dapcha Kashi Khanda Agro Vet",
+                    "name:ne": "दाप्चा कासिखन्ड एग्रो भेट",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6071863,
+                        27.5531619
+                    ]
+                },
+                "id": "node/9449599526"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599527",
+                    "addr:place": "Dapcha",
+                    "name": "Sewa Vet Agro",
+                    "name:ne": "सेवा भेट एगो",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6051454,
+                        27.552984
+                    ]
+                },
+                "id": "node/9449599527"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599529",
+                    "addr:place": "Dapcha, Chattrebanjh",
+                    "contact": "9861291658",
+                    "email": "cooldudepraku434@gmail.com",
+                    "name": "Shreeram Agro vet",
+                    "name:ne": "श्रीराम एग्रो भेट",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6098605,
+                        27.5525218
+                    ]
+                },
+                "id": "node/9449599529"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9449599530",
+                    "addr:place": "Hattigauda,Dapcha",
+                    "name": "Raj agrovet drag centre",
+                    "opening_hours": "6:00-19:00",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.62586,
+                        27.54438
+                    ]
+                },
+                "id": "node/9449599530"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9502426758",
+                    "addr:place": "Bhakundebesi",
+                    "name": "Satyal agrovet",
+                    "opening_hours": "Mo-Su 07:00-19:00",
+                    "phone": "9841445055",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6422212,
+                        27.5616533
+                    ]
+                },
+                "id": "node/9502426758"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9502426759",
+                    "addr:place": "Bhakundebesi",
+                    "name": "New Bindabasini Agrovet",
+                    "name:ne": "न्यू बिन्दबासिनी एग्रोभेट",
+                    "opening_hours": "Mo-Su 07:00-18:00",
+                    "phone": "9841792713",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6418229,
+                        27.5597167
+                    ]
+                },
+                "id": "node/9502426759"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9502426760",
+                    "addr:place": "Bhakunde besi",
+                    "name": "Bindabaseni agrevet",
+                    "opening_hours": "Mo-Su 06:00-18:00",
+                    "phone": "9841285132",
+                    "shop": "agrarian",
+                    "source": "Namobuddha open mapping 2022"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.6416896,
+                        27.56223
+                    ]
+                },
+                "id": "node/9502426760"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9626002970",
+                    "name": "Upakar Agro Seed Concern",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2652479,
+                        27.6658223
+                    ]
+                },
+                "id": "node/9626002970"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9626238136",
+                    "name": "Simira store",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2738642,
+                        27.6683451
+                    ]
+                },
+                "id": "node/9626238136"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9626246037",
+                    "name": "Bikesh mill",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2741569,
+                        27.6666098
+                    ]
+                },
+                "id": "node/9626246037"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9626250848",
+                    "name": "Kailash agriculture pharma",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2759961,
+                        27.668384
+                    ]
+                },
+                "id": "node/9626250848"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9643242472",
+                    "name": "Rice mill",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2758846,
+                        27.6524285
+                    ]
+                },
+                "id": "node/9643242472"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9645191501",
+                    "name": "A.S. Aaloo Pyaaz Bhandar",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.275373,
+                        27.6773557
+                    ]
+                },
+                "id": "node/9645191501"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9645209612",
+                    "name": "Susila fruits and vegetables",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2720216,
+                        27.6741339
+                    ]
+                },
+                "id": "node/9645209612"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9648111912",
+                    "name": "Agri mart",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2814997,
+                        27.6740156
+                    ]
+                },
+                "id": "node/9648111912"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9648166718",
+                    "name": "D.N.D Traders Agro-Vets",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2764692,
+                        27.6760295
+                    ]
+                },
+                "id": "node/9648166718"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9655525025",
+                    "name": "Rara karnali agriculture Nepal Pvt ltd",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2800896,
+                        27.6827924
+                    ]
+                },
+                "id": "node/9655525025"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9720291552",
+                    "name": "Jai Mankamana khadhana Store",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.2698243,
+                        27.6696904
+                    ]
+                },
+                "id": "node/9720291552"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9724480810",
+                    "name": "Chadrama Muktipurpose Agro",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        85.273851,
+                        27.6585284
+                    ]
+                },
+                "id": "node/9724480810"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9803225613",
+                    "name": "Chaurasiya Seed Supplier",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4515351,
+                        27.5177324
+                    ]
+                },
+                "id": "node/9803225613"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9803240719",
+                    "name": "Om Yadav Agro",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4506236,
+                        27.517948
+                    ]
+                },
+                "id": "node/9803240719"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9804188690",
+                    "name": "Phoenix Trading and Feed Industries",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4525259,
+                        27.5133733
+                    ]
+                },
+                "id": "node/9804188690"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9805555384",
+                    "name": "Gautam Feeds and General Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4523975,
+                        27.5180491
+                    ]
+                },
+                "id": "node/9805555384"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9805754234",
+                    "name": "The Kishan House",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.449339,
+                        27.5164645
+                    ]
+                },
+                "id": "node/9805754234"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9806004514",
+                    "name": "Siddhartha Agro-Vet",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4535036,
+                        27.5161833
+                    ]
+                },
+                "id": "node/9806004514"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9806016343",
+                    "name": "Pramila Vet Pharma",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4540281,
+                        27.5140802
+                    ]
+                },
+                "id": "node/9806016343"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9806441744",
+                    "name": "Basyal Vet-Pharma",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.45491,
+                        27.5094228
+                    ]
+                },
+                "id": "node/9806441744"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9807246395",
+                    "name": "RK Agro Industries",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4317548,
+                        27.5087294
+                    ]
+                },
+                "id": "node/9807246395"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9807688362",
+                    "name": "New Om Agrovet",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4497302,
+                        27.5167754
+                    ]
+                },
+                "id": "node/9807688362"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9808317007",
+                    "name": "Siddhartha Agro-Vet",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4547255,
+                        27.5202968
+                    ]
+                },
+                "id": "node/9808317007"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9808568285",
+                    "name": "Prime Suppliers Pvt Ltd",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4542786,
+                        27.5210872
+                    ]
+                },
+                "id": "node/9808568285"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9808898014",
+                    "name": "R G Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4592275,
+                        27.5245481
+                    ]
+                },
+                "id": "node/9808898014"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9810963813",
+                    "name": "Shri Agro House",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4458699,
+                        27.5186946
+                    ]
+                },
+                "id": "node/9810963813"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9810972838",
+                    "name": "Bhim SIddhartha Feeders Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4501064,
+                        27.5185203
+                    ]
+                },
+                "id": "node/9810972838"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9810972862",
+                    "name": "Agro Vet Centre",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4516456,
+                        27.5182267
+                    ]
+                },
+                "id": "node/9810972862"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9810972865",
+                    "name": "Yadhav Agro Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4518738,
+                        27.5181816
+                    ]
+                },
+                "id": "node/9810972865"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9812336773",
+                    "name": "Dajuvai Feeds Suppliers",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4224252,
+                        27.5086804
+                    ]
+                },
+                "id": "node/9812336773"
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    "@id": "node/9832198421",
+                    "name": "Shree Krishna Krishi Samagri Store",
+                    "shop": "agrarian"
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        83.4593005,
+                        27.5059543
+                    ]
+                },
+                "id": "node/9832198421"
+            }
+        ]
+    }
+]

@@ -19,6 +19,9 @@ import { Button } from '@mui/material';
 import { Link as LinkA } from 'react-router-dom';
 import { navItems } from '../../constants';
 import { useNavigate } from 'react-router-dom';
+import Fab from '@mui/material/Fab';
+import Message from '@mui/icons-material/Message';
+import { Chat } from '../Chat';
 const drawerWidth = 240;
 
 // const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -70,6 +73,15 @@ export function Navbar({ isLoggedIn, setIsLoggedIn }) {
   const theme = useTheme();
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
+  const handleClickOpen = () => {
+    setOpenC(true);
+  };
+
+  const handleClose = () => {
+    setOpenC(false);
+  };
+  const [openC, setOpenC] = React.useState(false);
+  const [value, setValue] = React.useState(0);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -127,6 +139,11 @@ export function Navbar({ isLoggedIn, setIsLoggedIn }) {
               >
                 Profile
               </Button>
+              <Fab color="primary" onClick={setOpenC} size="medium" aria-label="add">
+                <Message />
+              </Fab>
+              {openC ? <Chat open={openC} handleClose={handleClose} handleClickOpen={handleClickOpen} /> : null}
+
             </>
           ) : (
             <>
@@ -135,7 +152,8 @@ export function Navbar({ isLoggedIn, setIsLoggedIn }) {
               </Button>
               <Button variant="secondary" color="textSecondary" onClick={() => handleNavigation('/login')} >
                 Login
-              </Button></>
+              </Button>
+            </>
           )}
         </Toolbar>
       </AppBar>
@@ -173,6 +191,7 @@ export function Navbar({ isLoggedIn, setIsLoggedIn }) {
               <ListItemText primary={text.label} />
             </ListItem>
           ))}
+
         </List>
       </Drawer>
     </Box>
