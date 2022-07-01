@@ -21,7 +21,7 @@ export function Main() {
     const focussed1Ref = useRef(lng);
 
 
-    const API_KEY = 'b50ba524bcd2f7d3a582e0b42b251afd'
+    const API_KEY = process.env.REACT_ENV_API_KEY
 
 
 
